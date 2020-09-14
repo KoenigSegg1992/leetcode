@@ -1,10 +1,10 @@
-package com.koenigsea.leetcodeexercices;
+package com.leetcode.methods;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class LeetcodeExercicesApplicationTests {
+class ApplicationTests {
 
     @Test
     void contextLoads() {

@@ -1,13 +1,14 @@
-package com.koenigsea.leetcodeexercices;
+package com.leetcode.methods;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+/**
+ * @author KoenigSEA
+ */
 @SpringBootApplication
-public class LeetcodeExercicesApplication {
-
+public class Application {
     public static void main(String[] args) {
-        SpringApplication.run(LeetcodeExercicesApplication.class, args);
+        SpringApplication.run(Application.class, args);
     }
-
 }

@@ -1,6 +1,7 @@
 package com.leetcode.methods.handler;
 
 import com.leetcode.methods.listnode.KthNodeFromListEnd;
+import com.leetcode.methods.listnode.MyLinkedList;
 import com.leetcode.methods.listnode.ReverseList;
 import com.leetcode.methods.tools.ListNode;
 import org.slf4j.Logger;
@@ -22,7 +23,7 @@ public class ListNodeHandler implements CommandLineRunner {
     private String singleExample;
 
     public void showExample() {
-        System.out.println("Example ListNode is: [" + singleExample + "]");
+        System.out.println("Example Linked List is: [" + singleExample + "]");
     }
 
     public void reverseListCheck() {
@@ -37,9 +38,18 @@ public class ListNodeHandler implements CommandLineRunner {
     public void kthNodeFromListEndCheck() {
         ListNode node = ListNode.stringToListNode(singleExample);
         int result = KthNodeFromListEnd.kthToLast(node, 3);
-        System.out.println(result);
+        System.out.println("Get 3rd value from end of example list: "+result);
     }
 
+    public void myLinkedListCheck() {
+        MyLinkedList linkedList = new MyLinkedList();
+        linkedList.addAtHead(1);
+        linkedList.addAtTail(3);
+        linkedList.addAtIndex(1, 2);
+        System.out.println(linkedList.get(1));
+        linkedList.deleteAtIndex(1);
+        System.out.println(linkedList.get(1));
+    }
 
     @Override
     public void run(String... args) {
@@ -50,5 +60,8 @@ public class ListNodeHandler implements CommandLineRunner {
         logger.info("kthNodeFromListEndCheck()...");
         kthNodeFromListEndCheck();
         logger.info("kthNodeFromListEndCheck()..OK");
+        logger.info("myLinkedListCheck()...");
+        myLinkedListCheck();
+        logger.info("myLinkedListCheck()..OK");
     }
 }

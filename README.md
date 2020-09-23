@@ -32,8 +32,6 @@ Different branches of LeetCode Exercises.
   kthToLast (Double Pointers)
   ```
 
-
-
 #### 5. Binary Search Tree
 
 #### 6. Set & Map
